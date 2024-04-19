@@ -1,115 +1,93 @@
-.jacquard-font {
-    font-family: "Jacquard 24", system-ui;
-    font-weight: 400;
-}
-
-#phrase {
-    text-align: center;
-    color: white;
-    margin-top: 1em;
-}
-
-a:link {
-    color: orange;
-}
-
-a:visited {
-    color: violet;
-}
-
-a:hover {
-    color: white;
-}
-
-a:active {
-    color: silver;
-}
-
-.ptext {
-    font-weight: 300;
-    font-style: italic;
-}
-
-.act {
-    color: red;
-    text-decoration: underline;
-}
-
-.top {
-    padding: 1rem;
-    border-style: dotted;
-}
-
-.bottom {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-style: dashed;
-}
-
-h2 + p {
-    background-color: white;
-}
-
-h1 {
-    color: #244C3C;
-    font-style: italic;
-    font-variant: small-caps;
-}
-
-h2 {
-    color: #526C5B;
-}
-
 body {
-    background-color: #DCDCBB;
+    height: 100%;
+    background-image: linear-gradient(
+        to bottom,
+            #042A38 0%,
+            /* Stronger color at the top */
+            #042A38 50%,
+            /* Transition to the second color */
+            #B32442 100%
+            /* Second color continues to the bottom */
+    );
 }
 
-ul li::marker {
-    content: '$ ';
+html {
+    height: 100%;
 }
 
-img {
-    display: block;
-    max-width: 33%;
-    max-height: 33%;
-    margin: 0 auto;
-    margin-bottom: 1em;
+span {
+    color: #B32442;
 }
 
-table {
-    border: 1px solid black;
-    width: 75%;
-    display: block;
-    margin: 0 auto;
+a {
+    color: #B32442;
+    text-decoration: none;
 }
 
-tfoot {
-    background-color: #244C3C;
+#title {
+    display: inline-block;
+}
+
+.type-title {
+    margin-left: 20%;
+    margin-top: 16%;
     color: white;
-    font-style: italic;
+    overflow: hidden;
+    border-right: .10em solid transparent;
+    white-space: nowrap;
+    font-family: "Robot", sans-serif;
+    font-weight: 600;
+    font-size: 2.8em;
+    font-style: normal;
+    width: 0;
+    animation:
+        typing 1.8s steps(30, end) forwards,
+        blink 0.9s infinite;
 }
 
-thead {
-    background-color: #244C3C;
-    color: white;
+.fade-in {
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #F7F5EB;
+    white-space: initial;
+    font-family: "Robot", sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    font-style: normal;
+    animation:
+        fadeIn 4s;
 }
 
-tbody th {
-    background-color: gold;
-    color: black;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    54% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-tbody {
-    background-color: silver;
-    color: white;
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
-th {
-    border: 1px solid black;
-}
+@keyframes blink {
+    from {
+        border-color: white;
+    }
 
-td {
-    text-align: center;
-    border: 1px solid black;
+    to {
+        border-color: transparent;
+    }
 }
