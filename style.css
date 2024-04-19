@@ -1,0 +1,115 @@
+.jacquard-font {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+}
+
+#phrase {
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+}
+
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: violet;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: silver;
+}
+
+.ptext {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.act {
+    color: red;
+    text-decoration: underline;
+}
+
+.top {
+    padding: 1rem;
+    border-style: dotted;
+}
+
+.bottom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-style: dashed;
+}
+
+h2 + p {
+    background-color: white;
+}
+
+h1 {
+    color: #244C3C;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+h2 {
+    color: #526C5B;
+}
+
+body {
+    background-color: #DCDCBB;
+}
+
+ul li::marker {
+    content: '$ ';
+}
+
+img {
+    display: block;
+    max-width: 33%;
+    max-height: 33%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+table {
+    border: 1px solid black;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+tfoot {
+    background-color: #244C3C;
+    color: white;
+    font-style: italic;
+}
+
+thead {
+    background-color: #244C3C;
+    color: white;
+}
+
+tbody th {
+    background-color: gold;
+    color: black;
+}
+
+tbody {
+    background-color: silver;
+    color: white;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+}
