@@ -1,14 +1,8 @@
 body {
     height: 100%;
-    background-image: linear-gradient(
-        to bottom,
-            #042A38 0%,
-            /* Stronger color at the top */
-            #042A38 50%,
-            /* Transition to the second color */
-            #B32442 100%
-            /* Second color continues to the bottom */
-    );
+    background: url('./losangeles.jpg') no-repeat fixed;
+    background-size: cover;
+    font-family: "Robot", sans-serif;
 }
 
 html {
@@ -16,39 +10,50 @@ html {
 }
 
 span {
-    color: #B32442;
+    color: #FFAF20;
 }
 
 a {
-    color: #B32442;
+    color: #FFAF20;
     text-decoration: none;
 }
 
-#title {
-    display: inline-block;
+li {
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+p {
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.card {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 3%;
+    overflow: scroll;
+    background: white;
+    border-radius: 25px;
+    border-width: 30px;
+    border-color: #FFAF20;
 }
 
 .type-title {
-    margin-left: 20%;
-    margin-top: 16%;
-    color: white;
-    overflow: hidden;
+    color: #10455B;
     border-right: .10em solid transparent;
     white-space: nowrap;
-    font-family: "Robot", sans-serif;
     font-weight: 600;
-    font-size: 2.8em;
+    font-size: 1.6em;
     font-style: normal;
-    width: 0;
-    animation:
-        typing 1.8s steps(30, end) forwards,
-        blink 0.9s infinite;
+    width: 80%;
 }
 
 .fade-in {
     margin-left: 20%;
     margin-right: 20%;
-    color: #F7F5EB;
+    color: black;
     white-space: initial;
     font-family: "Robot", sans-serif;
     font-weight: 400;
@@ -69,25 +74,5 @@ a {
 
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-    from {
-        border-color: white;
-    }
-
-    to {
-        border-color: transparent;
     }
 }
